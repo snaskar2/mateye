@@ -1,7 +1,7 @@
 function [test_start_time,time_red_h_test ,horizontal_test_ending_time]=horizontal_saccade_test
     
 %Set the window properties
-    f = figure("Name", "Horizontal Saccade test"); % horizontal calibration
+    f = figure("Name", "Horizontal Saccade test","NumberTitle","off"); % horizontal calibration
     f.Position = [0 300 1366 350]; % left bottom width height
        
         x = [1 2 3];
@@ -46,7 +46,7 @@ function [test_start_time,time_red_h_test ,horizontal_test_ending_time]=horizont
        
         end
         hold off;
-        horizontal_test_ending_time = seconds(datetime("now")  - test_start_time);;
+        horizontal_test_ending_time = seconds(datetime("now")  - test_start_time);
         close;
     end
     
